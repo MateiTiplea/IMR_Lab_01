@@ -16,7 +16,6 @@ public class cactusChangeState : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance (transform.position, otherCactus.position);
-        Debug.Log(distance);
         if (distance <= 0.7f)
         {
             cactusAnimator.SetBool("isFighting", true);
